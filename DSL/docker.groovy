@@ -2,7 +2,7 @@ job('NodeJS Docker') {
 scm {
 git('git://github.com/wardviaene/docker-demo.git') {  node -> 
             node / gitConfigName('Filip')
-            node / gitConfigEmail('test@teest.com')
+            node / gitConfigEmail('test@test.com')
 
    }
 }
