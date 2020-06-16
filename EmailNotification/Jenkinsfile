@@ -18,10 +18,10 @@ node {
     }
   } catch(e) {
     // mark build as failed
-    currentBuild.result = "FAILURE";
+    currentBuild.result = "FAILURE"; //Mark the result as FAILIURE
     // set variables
-    def subject = "${env.JOB_NAME} - Build #${env.BUILD_NUMBER} ${currentBuild.result}"
-    def content = '${JELLY_SCRIPT,template="html"}'
+    def subject = "${env.JOB_NAME} - Build #${env.BUILD_NUMBER} ${currentBuild.result}" //set Build name,number etc.
+    def content = '${JELLY_SCRIPT,template="html"}' 
 
     // send email
     if(to != null && !to.isEmpty()) {
