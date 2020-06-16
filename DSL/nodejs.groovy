@@ -2,7 +2,7 @@ job('NodeJS example') { //Name for the job we want to create
     scm {
         git('git://github.com/wardviaene/docker-demo.git') {  node ->//Job will be downloaded from this link
             node / gitConfigName('Filip')
-            node / gitConfigEmail('test@mail.com')
+            node / gitConfigEmail('test@test.com')
         }
     }
     triggers {
