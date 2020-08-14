@@ -1,4 +1,4 @@
-node {
+node { //Default Node
 
   // config 
   def to = emailextrecipients([
